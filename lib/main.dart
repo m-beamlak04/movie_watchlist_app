@@ -1,13 +1,20 @@
-class Movie {
-  final String title;
-  final String posterPath;
-  final List<String> cast;
-  final String synopsis;
+import 'package:flutter/material.dart';
 
-  Movie({
-    required this.title,
-    required this.posterPath,
-    required this.cast,
-    required this.synopsis,
-  });
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Text('Movie Watchlist App'),
+        ),
+      ),
+    );
+  }
 }
